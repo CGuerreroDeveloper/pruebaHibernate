@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="consultas.cliente" table="cliente">
+        <id name="cedula" column="cedula">
+            <generator class="assign"/>
+        </id>
+        <property name="nombre" type="string" column="nombre"/>
+        <property name="telefono" type="string" column="telefono"/>
+        <property name="email" type="string" column="email"/>
+        
+    </class>
+</hibernate-mapping>
